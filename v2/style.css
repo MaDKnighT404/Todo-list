@@ -1,0 +1,125 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    box-sizing: content-box;
+    background: linear-gradient(to right, rgb(104, 114, 181), rgb(33, 61, 171))
+}
+
+.main__wrapper{
+    margin: 50px auto;
+}
+
+.important {
+    font-weight: bold;
+    color: #A40E11; }
+
+.todo__list__container {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 40px;
+    background-color: #ccb504;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px 0 #00060a; 
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
+    font-size: 30px; 
+}
+
+.task__create__wrapper {
+    text-align: center; 
+}
+
+.task__message {
+    width: 600px;
+    padding: 10px;
+}
+
+.task__btn__add {
+    margin-top: 20px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer; 
+}
+
+
+.task {
+    padding: 10px 40px 10px 10px;
+    margin: 20px auto;
+    list-style-type: none; 
+    border-bottom: 1px solid #000;
+    width: 80%;
+    position: relative;
+    text-align: center;
+
+}
+
+
+.task__checkbox {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 225px;
+    top:10px;
+    opacity: 0.3;
+}
+
+.task__checkbox:checked {
+    opacity: 1;
+}
+
+
+.new__tasks__list {
+    padding-left: 0;
+
+    align-items:center;
+    margin-top: 50px;
+}
+
+li {
+    background:rgb(104, 114, 181);
+    margin-top: 50px
+}
+
+.new__task__text {
+    font-size: 18px;
+    vertical-align:3px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px #000;
+    word-wrap: break-word;
+    line-height: 1.8rem;
+
+
+}
+
+.task__delete {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: 0;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.task__delete:hover {
+    background:#A40E11
+}
+
+.completed {
+    background: rgba(193, 211, 193, 0.8);
+    border-radius: 10px;
+    border-top: 1px solid #000;
+    margin-top: 50px;
+    margin-bottom: -30px;
+
+}

@@ -1,0 +1,127 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2 {
+    width: 250px;
+    margin: 50px auto;
+    text-align:center;
+}
+
+#task__description {
+    width: 750px;
+    font-size: 1.2rem;
+    height: 60px;
+    border: 2px solid rgb(144, 125, 20);
+
+}
+
+.add__todo__task__wrapper {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    background: rgb(255, 223, 39);
+    padding: 30px;
+    padding-right: 890px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.button__wrapper {
+    margin-left: 10px;
+
+}
+
+.button__add__task { 
+    width: 100px;
+    height: 60px;
+    background-color: rgb(0, 207, 210);
+    color: #fff;
+    border: 2px solid rgb(144, 125, 20);
+    cursor: pointer;
+}
+
+.button__add__task:hover {
+    background-color: rgb(3, 243, 247);;
+}
+/*------------------------------------------------------ */
+
+.task__list__wrapper {
+    width: 900px;
+    margin: 50px auto;
+}
+
+.task__item__wrapper {
+    display: flex;
+    align-content: center;
+    align-items:center;
+    background:rgb(82, 181, 220);
+    height: 70px;
+    position: relative;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.task__item__descr {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.button__delete__task {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:0;
+    top:0;
+    font-size:20px;
+    border: none;
+
+    cursor: pointer;
+    background:none
+}
+
+.button__delete__task:hover {
+    background:rgb(235, 96, 96);
+}
+
+
+.checkbox {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:25%;
+    left: -60px;
+    font-size:20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.completed {
+    background:rgba(133, 134, 133, 0.6);
+    opacity: .5;
+}
+
+.deleting {
+    animation: opacity .8s ease-in-out;
+}
+
+@keyframes opacity{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
